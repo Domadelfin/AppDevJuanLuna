@@ -1,0 +1,270 @@
+body {
+    background-color: black;
+    background-image: url(img/JLportrait.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.slider {
+    margin-top: 100px;
+    margin-left: 40%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }    
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.rotated {
+    transform: rotateY(calc(var(--i)*0deg));
+}
+
+.slider span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span img:hover {
+    transform: scale(1.2);
+}
+
+.otherartistbody {
+    background-image: url(img/otherartistbackdrop.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: black;
+}
+
+.inline {
+    display: inline;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 70px;
+    width: 49%;
+}
+
+.search {
+    border-radius: 25px;
+    background: #f137c8;
+    border-color: #f137c8;
+    color: white;
+}
+
+.painting, .abjl, .otherartist {
+    color: #f137c8;
+    text-decoration: none;
+}
+
+.info {
+    padding-top: 50px;
+    padding-right: 150px;
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Saira Condensed;
+}
+
+.ArtsyLogo {
+    padding: -5px;
+    width: 40px;
+}
+
+.textlogodiv {
+    text-align: justify;
+    width: [width of img];
+    margin: 10px 25px;
+}
+
+.textlogodiv img {
+    display: block;
+    margin: 0 auto;
+}
+
+.divlogos {
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    padding: 25px -200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    box-shadow: 0 10px 30px -10px #f137c8;
+}
+
+.photowdef {
+    width: 33%;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 20px;
+    padding-left: 30px;
+    float: left;
+}
+
+.textcontainer {
+    margin-left: 20px;
+    padding-top: 50px;
+    padding-right: 275px;
+}
+
+p {
+    position: relative;
+    font-family: inter;
+
+}
+
+.diagonal {
+    background-color: #e8e7e8;
+    margin-top: 75px;
+    padding-bottom: 250px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.logos {
+    width: 50px;
+}
+
+.logos:hover {
+    transform: scale(1.1);
+}
+
+.spanlogo{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.JLtitle {
+    font-size: 85px;
+    color: #ffffff;
+    padding-left: 70px;
+    letter-spacing: -5px;
+}
+
+.MPtitle {
+    color: #f137c8;
+    font-size: 85px;
+    padding-left: 70px;
+    margin-top: -25px;
+    letter-spacing: -5px;
+}
+
+.footercontent {
+    margin-top: -25px;
+    background-color: black;
+    padding: -10px;
+    margin-bottom: 30px;
+}
+
+.white {
+    color: white;
+}
+
+.pink {
+    color: #f137c8;
+}
+
+.bottom {
+    margin-top: -10px;
+}
+
+.footerspan {
+    margin-left: 60px;
+    padding-top: 40px;
+}
+
+.footertxt {
+    font-size: 25px;
+}
+
+.textlogo {
+    font-family: Saira Condensed;
+    font-size: 25px;
+    margin-top: -10px;
+    padding: -10px;
+}
+
+.socmed {
+    width: 40px;
+}
+
+.socmedlogos {
+    padding-top: 50px;
+    padding-right: 40px;
+}
+
+.emaillogo {
+    width: 30px;
+}
+
+.bottomfooter {
+    margin-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.leftfooter {
+    padding-left: 70px;
+}
+
+.rightfooter {
+    padding-right: 40px;
+}
+
+.belowicons {
+    padding-top: 50px;
+}
+
+.belowotherartists {
+    padding-top: 500px;
+}
+
+.diagonalotherartist {
+    background-color: #e8e7e8;
+    margin-top: 75px;
+    padding-bottom: 750px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.paintingdescription {
+    margin-top: 150px;
+    margin-left:  33%;
+    margin-right:  33%;
+}
