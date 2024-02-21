@@ -5,6 +5,10 @@ body {
     background-size: 100vw;
 }
 
+#changingTitle, #changingDate {
+    display: none;
+}
+
 .slider {
     margin-top: 100px;
     margin-left: 40%;
@@ -127,6 +131,10 @@ h1, h2 {
     flex-flow: row nowrap;
     justify-content: center;
     box-shadow: 0 10px 30px -10px #f137c8;
+}
+
+.artistdef {
+    margin-right: 20%;
 }
 
 .photowdef {
@@ -252,7 +260,7 @@ p {
 }
 
 .belowotherartists {
-    padding-top: 500px;
+    padding-top: 700px;
 }
 
 .diagonalotherartist {
