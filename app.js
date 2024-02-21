@@ -10,6 +10,9 @@ function changeText(newDescription) {
     var textElement = document.getElementById('changingText');
     var titleElement = document.getElementById('changingTitle');
     var dateElement = document.getElementById('changingDate');
+
+    titleElement.style.display = 'inline';
+    dateElement.style.display = 'inline';
     
     if (newDescription == 1) {
         titleElement.innerText = "ENSUEÑOS DE AMOR";
